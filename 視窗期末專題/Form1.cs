@@ -391,6 +391,7 @@ namespace 視窗期末專題
             {
                 this.BackgroundImage = Properties.Resources._2d_Wallpaper___WallpaperSafari;
                 pictureBox4.Image = Properties.Resources.green_slime;
+                pictureBox5.Image.RotateFlip(RotateFlipType.Rotate180FlipX);
                 if (dir == false)
                 { pictureBox4.Image.RotateFlip(RotateFlipType.Rotate180FlipY); }
             }
