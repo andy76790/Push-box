@@ -218,7 +218,7 @@ namespace 視窗期末專題
                     pictureBox4.Image.RotateFlip(RotateFlipType.Rotate180FlipY);
                     dir = true;
                 }
-                if ((Map[cy,cx-1]==1 || Map[cy,cx-1]==5) && cx>=1)
+                if ((Map[cy,cx-1]==1 || Map[cy,cx-1]==5 || Map[cy, cx - 1] == 8) && cx>=1)
                 {
                     cx = cx - 1;
                     pictureBox4.Location = new Point((cx - 1) * 40, (cy - 1) * 40 + 25);
@@ -271,7 +271,7 @@ namespace 視窗期末專題
                     pictureBox4.Image.RotateFlip(RotateFlipType.Rotate180FlipY);
                     dir = false;
                 }
-                if ((Map[cy, cx + 1] == 1 || Map[cy, cx + 1] == 5) && cx <= col-1)
+                if ((Map[cy, cx + 1] == 1 || Map[cy, cx + 1] == 5 || Map[cy, cx - 1] == 8) && cx <= col-1)
                 {
                     cx = cx + 1;
                     pictureBox4.Location = new Point((cx - 1) * 40, (cy - 1) * 40 + 25);
